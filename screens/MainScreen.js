@@ -16,7 +16,9 @@ const MainScreen = () => {
 
     const callWeatheAPI = React.useCallback(() => {
         setIsRefreshing(true)
-        const url = `http://api.weatherapi.com/v1/forecast.json?key=db8263160d074605881225302230506&q=oakville&days=5&aqi=no&alerts=no`
+        // Please insert your api key below
+        const apiKey = ""
+        const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=oakville&days=5&aqi=no&alerts=no`
         fetch(url)
             .then((response) => response.json())
             .then((responseData) => {
