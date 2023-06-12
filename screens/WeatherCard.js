@@ -13,8 +13,8 @@ const WeatherCard = ({ data }) => {
      */
     const getDay = () => {
         const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        const dayIndx = new Date(date).getDay() + 1
-        return weekday[dayIndx]
+        const dayIndx = new Date(date).getDay()
+        return weekday[dayIndx == 6 ? 0 : dayIndx + 1]
     }
 
     /**
@@ -58,7 +58,7 @@ const WeatherCard = ({ data }) => {
                         {getMonth()}, {getDate()}
                     </Text>
                     <View style={{ flex: 1 }} />
-                    <Text><Text style={{ fontWeight: '600' }}>Precipitation:</Text> {Math.round(pop * 100)}%</Text>
+                    <Text><Text style={{ fontWeight: '600' }}>Precipitation:</Text> {pop} in</Text>
                 </View>
 
                 {/* Spacer */}

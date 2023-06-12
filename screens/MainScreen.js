@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ActivityIndicator, Alert, FlatList, RefreshControl, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import WeatherCard from './WeatherCard'
 import Icon from 'react-native-vector-icons/Ionicons';
+import HeaderView from './HeaderView';
 
 const MainScreen = () => {
 
@@ -42,7 +43,7 @@ const MainScreen = () => {
         <SafeAreaView style={styles.container}>
             {/* Header */}
             <View style={{ padding: 16, flexDirection: 'row' }}>
-                <Text style={styles.header}>
+                {/* <Text style={styles.header}>
                     Oakville
                 </Text>
                 <View style ={{flex: 1}} />
@@ -50,7 +51,8 @@ const MainScreen = () => {
                     <View style={styles.refreshFAB}>
                         <Icon name="refresh-outline" size={24} />
                     </View>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
+                <HeaderView/>
             </View>
             {/* Card Container */}
             {cards ? (
