@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { AutocompleteDropdownContextProvider } from 'react-native-autocomplete-dropdown';
 import MainScreen from './screens/MainScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <MainScreen/>
-      <StatusBar hidden={true}/>
-    </View>
+    <AutocompleteDropdownContextProvider>
+      <View style={styles.container}>
+        <MainScreen />
+        <StatusBar hidden={true} />
+      </View>
+    </AutocompleteDropdownContextProvider>
   );
 }
 
