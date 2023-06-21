@@ -22,7 +22,7 @@ const MainScreen = () => {
     const callWeatheAPI = useCallback(() => {
         setIsRefreshing(true)
         // Please insert your api key below
-        const apiKey = "17db4085ce2b4225bc2150312232106"
+        const apiKey = ""
         const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city.title}&days=5&aqi=no&alerts=no`
         fetch(url)
             .then((response) => response.json())
