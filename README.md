@@ -53,8 +53,10 @@ npx expo start
 2. Use the Expo Go app on your mobile device or an emulator to scan the QR code displayed in the terminal to launch the app.
 
 ## Screenshots
+<p align="row">
 <img width="400" src="./screenshots/img1.png" />
 <img width="400" src="./screenshots/img2.png" />
+</p>
 <img width="400" src="./screenshots/img3.png" />
 
 ## Dependencies
