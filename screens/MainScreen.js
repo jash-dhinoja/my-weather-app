@@ -50,7 +50,7 @@ const MainScreen = () => {
         }
     })
 
-    const press = useCallback(
+    const onSearchPress = useCallback(
         () => {
             callWeatheAPI()
             isSearching.value = !isSearching.value
@@ -68,7 +68,7 @@ const MainScreen = () => {
                         {city.title}
                     </Text>
                     <View style={{ flex: 1 }} />
-                    <TouchableOpacity onPress={press}>
+                    <TouchableOpacity onPress={onSearchPress}>
                         <View style={styles.refreshFAB}>
                             <Icon name="search-outline" size={24} />
                         </View>
