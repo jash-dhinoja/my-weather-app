@@ -32,7 +32,7 @@ This is a weather application built using the Expo managed workflow. It provides
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/jash-dhinoja/my-weather-app.git
 ```
 2. Change to the project directory:
 ```
@@ -51,6 +51,11 @@ npm install
 npx expo start
 ```
 2. Use the Expo Go app on your mobile device or an emulator to scan the QR code displayed in the terminal to launch the app.
+
+## Screenshots
+<img width="400" src="./screenshots/img1.png" />
+<img width="400" src="./screenshots/img2.png" />
+<img width="400" src="./screenshots/img3.png" />
 
 ## Dependencies
 The following dependencies are used in this project:
