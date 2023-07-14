@@ -43,6 +43,7 @@ const HeaderView = ({ setCity, isSearching }) => {
             dataSet={data}
             textInputProps={{
                 placeholder: 'Enter city name within Canada',
+                placeholderTextColor: 'light gray',
                 autoCorrect: false,
                 autoCapitalize: 'none',
                 style: {
